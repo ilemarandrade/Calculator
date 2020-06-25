@@ -1,0 +1,107 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background: #c2c2d6;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#calculadora {
+  padding: 2vw;
+  background: black;
+  color: white;
+  width: 30vw;
+  height: 80vh;
+}
+#contenedorDisplays {
+  height: 20%;
+  text-align: end;
+  font-family: "DS-Digital";
+}
+#displayValores {
+  color: yellow;
+}
+#display {
+  font-size: 8vh;
+}
+#botones {
+  height: 80%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+}
+#botones > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech Mono", monospace;
+}
+#clear {
+  grid-area: 1/1/2/3;
+  background: #9c1f1f;
+  border: black solid 1px;
+}
+#divide {
+  grid-area: 1/3/2/4;
+}
+#multiply {
+  grid-area: 1/4/2/5;
+}
+#zero {
+  grid-area: 5/1/6/3;
+}
+#equals {
+  grid-area: 4/4/6/5;
+  background: #1d2143;
+}
+
+#subtract {
+  grid-area: 2/4/3/5;
+}
+#add {
+  grid-area: 3/4/4/5;
+}
+.grayLight {
+  background: #686868;
+  border: black solid 1px;
+}
+.gray {
+  background: #454645;
+  border: black solid 1px;
+}
+.borderBlack {
+  border: black solid 1px;
+}
+#creador {
+  text-align: center;
+  color: red;
+  height: 10vh;
+  margin-top: 5vh;
+  font-family: "Share Tech Mono", monospace;
+}
+@font-face {
+  font-family: "DS-Digital";
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot");
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.svg#DS-Digital")
+      format("svg");
+}
+@media only screen and (max-width: 600px) {
+  #calculadora {
+    width: 90vw;
+    height: 85vh;
+  }
+}
